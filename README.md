@@ -3,7 +3,7 @@ This repo combines the VWs with Chrono simulation environment. We have several s
 
 ### (1) Readbag.py
 
-In this file, we use recorded elevation_map.bag from VWs to extract the elevation data. Then, we resize the data into 360*360. For the 'nan' value, we perform linear interpolation. After that, we normalize the filled data and create the .bmp image.
+In this file, we use recorded elevation_map.bag from VWs to extract the elevation data. Then, we resize the data into $360 \times 360$. For the 'nan' value, we perform linear interpolation. After that, we normalize the filled data and create the .bmp image.
 
 ### (2) RigidHeightMap.json
 
