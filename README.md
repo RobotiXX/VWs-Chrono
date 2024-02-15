@@ -7,7 +7,7 @@ In this file, we use recorded elevation_map.bag from VWs to extract the elevatio
 
 ### (2) RigidHeightMap.json
 
-After getting the elevation_data_linear.bmp, we use Json files to create the rigid rock terrain in the chrono environment. In the Json file, you can customize own size and height range. For example, we real world's map size is $2.88 \times 2.88$ meters and height range is from 0 to 1.33.
+After getting the elevation_data_linear.bmp, we use Json files to create the rigid rock terrain in the chrono environment. In the Json file, you can customize own size and height range. For example, the real world's map size is $2.88 \times 2.88$ meters and height range is from 0 to 1.33.
 
 ### (3) RockSimple.py
 
