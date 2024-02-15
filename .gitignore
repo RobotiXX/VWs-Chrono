@@ -88,6 +88,8 @@ nosetests.xml
 
 ## Compiled MEX binaries (all platforms)
 *.mex*
+*.png
+*.gif
 
 ## Simulink Code Generation
 slprj/
@@ -108,5 +110,3 @@ Data/rock1.bmp
 Data/elevation_test.bmp
 Data/elevation_data.bmp
 Data/*.bag
-*.png
-*.gif
