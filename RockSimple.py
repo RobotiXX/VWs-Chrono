@@ -189,7 +189,7 @@ trackPoint = chrono.ChVectorD(3.2, 0, 0) #forward-big/backward-small
 contact_method = chrono.ChContactMethod_NSC
 
 # Simulation step sizes
-step_size = 2e-3
+step_size = 2.5e-3
 tire_step_size = 1e-3
 
 # Simulation end time

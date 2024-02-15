@@ -10,8 +10,8 @@
    
         "Geometry": {
           "Height Map Filename": "Data/elevation_data_linear.bmp",
-          "Size": [64, 64],
-          "Height Range": [0, 10]
+          "Size": [64, 32],
+          "Height Range": [0, 12]
         },
    
         "Contact Material": {

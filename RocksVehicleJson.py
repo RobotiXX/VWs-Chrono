@@ -34,6 +34,8 @@ def main():
     my_feda.GetChassisBody().SetPos_dt(chrono.ChVectorD(init_speed, 0, 0))
     # Set gravity
     my_feda.GetSystem().Set_G_acc(chrono.ChVectorD(0, 0, -9.81))
+    my_feda.LockAxleDifferential(0, True)
+    my_feda.LockAxleDifferential(1, True)
 
     # Create the path-follower, cruise-control driver
     # Use a parameterized ISO double lane change (to left)
@@ -133,8 +135,8 @@ transmission_file = veh.GetDataFile('Data/HMMWV/HMMWV_AutomaticTransmissionSimpl
 tire_file = veh.GetDataFile("Data/HMMWV/HMMWV_RigidTire.json")
 
 # Initial vehicle location and orientation
-initLoc = chrono.ChVectorD(-20, 0, 1)
-initLocPath = chrono.ChVectorD(-20, 0, 1)
+initLoc = chrono.ChVectorD(-20, -3, 1.5)
+initLocPath = chrono.ChVectorD(-20, -3, 1.5)
 initRot = chrono.ChQuaternionD(1, 0, 0, 0)
 
 # Vehicle target speed (cruise-control)

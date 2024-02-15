@@ -24,11 +24,13 @@ def main():
     my_feda.SetWheelVisualizationType(wheel_vis_type)
     my_feda.SetTireVisualizationType(tire_vis_type)
 
-    init_speed = 1
+    init_speed = 2
     # Set initial speed
     my_feda.GetChassisBody().SetPos_dt(chrono.ChVectorD(init_speed, 0, 0))
     # Set gravity
     my_feda.GetSystem().Set_G_acc(chrono.ChVectorD(0, 0, -9.81))
+    my_feda.LockAxleDifferential(0, True)
+    my_feda.LockAxleDifferential(1, True)
 
     # Create the path-follower, cruise-control driver
     # Use a parameterized ISO double lane change (to left)
@@ -146,8 +148,8 @@ Filename = "RigidHeightMapOriginal.json"
 rigidterrain_file = os.path.join(Directory, Filename)
 
 # Initial vehicle location and orientation
-initLoc = chrono.ChVectorD(-20, 0, 1)
-initLocPath = chrono.ChVectorD(-20, 0, 1)
+initLoc = chrono.ChVectorD(-20, -3, 1.5)
+initLocPath = chrono.ChVectorD(-20, -3, 1.5)
 initRot = chrono.ChQuaternionD(1, 0, 0, 0)
 
 # Vehicle target speed (cruise-control)
@@ -183,7 +185,7 @@ trackPoint = chrono.ChVectorD(0.0, 0.0, 1.4)
 contact_method = chrono.ChContactMethod_NSC
 
 # Simulation step sizes
-step_size = 3e-3
+step_size = 2e-3
 tire_step_size = step_size
 
 # Simulation end time
