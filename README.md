@@ -21,21 +21,19 @@ This file is 1:1 HMMWV vehicle model in the rock terrain from Json files.
 
 This file is 1:1 HMMWV vehicle model in the rock terrain from API provided by chrono.
 
-### Result:
+### (6) Result:
 
-##### ElevationMap
+#### ElevationMap
 
 <p align="center">
   <img src="ElevationMap.png" alt="Elevation Map"/>
 </p>
-
-##### RCCar-Chrono
+#### RCCar-Chrono
 
 <div align="center">
   <img src="RCCar-chrono.gif" alt="RCCar-Chrono"/>
 </div>
-
-##### HMMWV-Chrono
+#### HMMWV-Chrono
 
 <div align="center">
   <img src="HMMWV-chrono.gif" alt="HMMWV-Chrono"/>

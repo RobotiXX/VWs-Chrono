@@ -108,3 +108,5 @@ Data/rock1.bmp
 Data/elevation_test.bmp
 Data/elevation_data.bmp
 Data/*.bag
+*.png
+*.gif
