@@ -105,8 +105,17 @@ build_chrono_website.sh
 refman.pdf
 src/chrono_granular/DoxyGenDocs/
 *.txt
-demo/
-Data/rock1.bmp
-Data/elevation_test.bmp
-Data/elevation_data.bmp
-Data/*.bag
+
+## Related to project
+baselines/TestPID/
+baselines/TestPIDEle/
+__pycache__/
+evaluate/ACL-frames/
+evaluate/BaseRLTest_logs/
+evaluate/PLRTest_logs/
+evaluate/PLR-videos/
+evaluate/RLCurves/
+evaluate/StageTest_logs/
+evaluate/TestModel/
+Sim2Real/
+train/logs/
